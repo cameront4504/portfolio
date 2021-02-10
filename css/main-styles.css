@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap');
+
+/* contrast test */
+/*
+img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+*/
+
+/*––––––––––––––––––––––––––––––––––––––––––––––––
+
+ TABLE OF CONTENTS
+ 
+––––––––––––––––––––––––––––––––––––––––––––––––––
+
++ Branding
+	- Colors
+	- Fonts
++ Main
+	- Headers
+	- Font decor
++ Navigation
+	- Shared
+	- Primary
+	- Secondary
++ Page Content
++ Footer
++ Modifiers & Queries
+	- Modifiers
+	- Media Queries
+
+
+/*––––––––––––––––––––––––––––––––––––––––––––––––
+
+BRANDING
+
+––––––––––––––––––––––––––––––––––––––––––––––––––
+
+/* COLORS /*
+
+Pink: #d741a7
+Purple: #3a1772
+Blue: #5398be
+Yellow: #f2cd5d
+Orange: #dea54b
+
+PINK / YELLOW PALETTE
+
+lite pink: #FECFCC
+dark pink: #F08A96
+sat yellow: #FFFD97;
+bleak yellow: #FAF5DB;
+soft orange: #EBBB67;
+gray: #454341;
+
+/* FONTS /*
+
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Raleway', sans-serif;
+
+
+/*––––––––––––––––––––––––––––––––––––––––––––––––
+
+ MAIN
+
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* BODY */
+
+body {
+	font-family: 'Source Sans Pro', ;
+	height: 100vh;
+}
+
+/* OVERRIDES */
+
+.columns:not(:last-child) {
+	margin-bottom: 0px;
+}
+
+.columns.columns.is-gapless {
+	margin-bottom: 0px;
+}
+
+.columns.is-gapless {
+	margin-top: -7px;
+}
+
+/* FONTS */
+
+h1, h2 {
+	font-family: 'Fjalla One';
+}
+
+
+a {
+	text-decoration: none;
+	-o-transition: .4s;
+	-ms-transition: .4s;
+	-moz-transition: .4s;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+.active {
+	text-decoration: underline;
+}
+
+hr { 
+	margin: 0;
+}
+
+/*––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NAVIGATION
+
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* primary nav */
+
+#site-brand {
+	font-family: 'Fjalla One';
+	font-size: 2em;
+	margin-right: 10px;
+}
+
+#primary-nav {
+	text-transform: uppercase;
+	padding: 10px;
+}
+
+#primary-nav a {
+	color: #454341;
+}
+
+#primary-nav a:hover {
+	color: #F08A96;
+}
+
+.social-set {
+	font-size: 2em;
+}
+
+.social-set a {
+	padding: 10px;
+}
+
+.social {
+	color: #F08A96;
+}
+
+.navbar a, .navbar a:hover {
+	background-color: white;
+}
+
+.navbar-burger {
+	margin-top: 5px;
+}
+
+/* bar menu */
+
+#barmenu-click {
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 1.4em;
+	padding: 24px 20px 0 0;
+}
+
+#barmenu {
+	display: none;
+	text-align: center;
+}
+
+#barmenu a:hover {
+	color: #454341;
+}
+
+/*––––––––––––––––––––––––––––––––––––––––––––––––
+
+ PAGE CONTENT
+
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* Works & Links */
+
+.work-cover h3 {
+	font-weight: bolder;
+}
+
+.work-cover img {
+	height: 100%;
+	width: 100%;
+}
+
+.cover-container {
+  position: relative;
+  width: 100%;
+}
+
+.cover-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .4s ease;
+  background-color: white;
+}
+
+.cover-container:hover .cover-overlay {
+  opacity: 1;
+}
+
+.work-cover .text {
+  color: black;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 10%;
+}
+
+.placeholder {
+	background-color: white;
+}
+
+
+/*––––––––––––––––––––––––––––––––––––––––––––––––
+
+ FOOTER
+
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+footer {
+	margin-top: 6px;
+	text-align: center;
+	padding: 30px 0 30px 0;
+}
+
+/*––––––––––––––––––––––––––––––––––––––––––––––––
+
+ MODIFIERS & QUERIES
+
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.bold-this {
+	font-weight: bold;
+}
+
+.center-this {
+	text-align: center;
+}
+
+.round-image {
+	border-radius: 50%;
+}
+
+@media only screen and (min-width: 1025px) {
+    #barmenu-click, #barmenu {
+		display: none;
+	}
+}
+
+/* desktop */
+
+@media only screen and (max-width: 1200px) {
+
+}
+
+/* tablets */
+
+@media only screen and (max-width: 768px) {
+
+}
+
+/* phones */
+
+@media only screen and (max-width: 375px) {
+	
+}
