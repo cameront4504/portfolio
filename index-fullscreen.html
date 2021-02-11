@@ -51,7 +51,7 @@
 			<!-- DESKTOP MENU -->
 			<nav id="primary-nav" class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
 			  <div onmouseover="makeItPretty();" class="navbar-brand">
-				<a id="site-brand" class="navbar-item" href="#about">Cameron Tolentino</a>
+				<a id="site-brand" class="navbar-item" href="#top">Cameron Tolentino</a>
 
 				<a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
 				  <a id="barmenu-click" onclick="handleBarMenu();"><i class='fas fa-bars'></i></a>
@@ -89,7 +89,7 @@
 				-->
 			</nav>
 			<hr>
-
+		
 			<!-- MOBILE MENU -->
 			<nav id="barmenu">
 					<a href="#projects" class="navbar-item">
@@ -105,46 +105,69 @@
 						Blog
 					</a>
 			</nav>
-			
-			<div id="wrapper">
 
-			<!-- SECTION: BANNER-->
-			<div id="about" class="container-is-max">
-				<img id="banner" src="assets/banner.png"/>
-			</div>
+			<!-- <img id="banner" src="assets/banner.png"/> -->
 			
-			<!-- SECTION: ABOUT -->
-			<div id="about2" class="section">
-			<div class="container">
-				<div class="level">
-				<div class="level-left">
-					<img src="assets/me.png" class="round-this image is-64x64" alt="Literally me">
-					&nbsp;&nbsp;&nbsp;&nbsp;
-					<h1 class="title is-4">About</h1>
+			<!-- SECTION: ABOUT-->
+			<div class="fullsize">
+			<div id="about" class="section">
+					<div id="about2">
+					<div class="container">
+						<div class="level">
+						<div class="level-left">
+							<img src="assets/me.png" class="round-this image is-64x64" alt="Literally me">
+							&nbsp;&nbsp;&nbsp;&nbsp;
+							<h1 class="title is-4">About</h1>
+						</div>
+						</div>
+						<p>
+							Cameron Tolentino is a former Web Design student graduated from the University of Central Florida. He is now pursuing a Master's Degree in Digital Media, and focuses on creating narrative-driven applications via web development and/or art.
+						</p>
+				​		</br>
+							​As for research, his main interests include narrative identity in digital culture, and the effects of hyperreality on reasoning and embodiment. When not freelancing, he enjoys writing, drawing, and assembling 3D models
+						</p>
+						<br/>
+						<a class="button is-primary" href="https://7cba371d-e4c0-4a66-97ac-aec7c6d6cd28.filesusr.com/ugd/ffcc69_b3f0105a541e4b2f9ac788a9378bae26.pdf">See Resume</a>
+						<a class="button">See CV (TBA)</a>
+					</div>
 				</div>
-				</div>
-				<p>
-					Cameron Tolentino is a former Web Design student graduated from the University of Central Florida. He is now pursuing a Master's Degree in Digital Media, and focuses on creating narrative-driven applications via web development and/or art.
-				</p>
-		​		</br>
-					​As for research, his main interests include narrative identity in digital culture, and the effects of hyperreality on reasoning and embodiment. When not freelancing, he enjoys writing, drawing, and assembling 3D models
-				</p>
-				<br/>
-				<a class="button is-primary" href="https://7cba371d-e4c0-4a66-97ac-aec7c6d6cd28.filesusr.com/ugd/ffcc69_b3f0105a541e4b2f9ac788a9378bae26.pdf">See Resume</a>
-				<a class="button">See CV (TBA)</a>
 			</div>
 			</div>
 
 			<!-- SECTION: PROJECTS -->
-			<div id="projects" class="section">
+			<div id="projects">
+			<div class="section">
 				<div class="container-is-max">
 					<div id="gallery"></div>
 				</div>
 			</div>
+			<div id="projects2" class="fullsize is-teal">
+			<div class="section">
+				<div class="container">
+					<div class="level">
+					<div class="level-left">
+						<span style="font-size: 48px;"><i class="fas fa-project-diagram"></i></span>
+						&nbsp;&nbsp;&nbsp;&nbsp;
+						<h1 class="title is-4">Projects</h1>
+					</div>
+					</div>
+					<p>
+						"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+					</p>
+					<br/>
+					<p>
+						Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+					</p>
+					<br/>
+					<a class="button is-primary" href="#">See More</a>
+				</div>
+			</div>
+			</div>
 
 			<!-- SECTION: SKILLS -->
-			<div id="skills" class="section">
-				<div class ="is-orange">
+			<div id="skills" class="fullsize is-orange">
+			<div class="section">
+				<div class="is-teal">
 				<div class="container">
 					<div class="level">
 					<div class="level-left">
@@ -163,7 +186,7 @@
 							<p class="skill-para">
 								One of my main passions, I love to bring some kind of visual design to my projects, especially through character art.
 							</p>
-							<a class="button is-primary" href="gallery.html">See Gallery</a>
+							<a class="button is-white" href="gallery.html">See Gallery</a>
 						</div>
 						<div class="column">
 							<img class="image skill-image round-this" src="assets/s_code.png" alt="drawing">
@@ -172,7 +195,7 @@
 								I was first introduced to programming through my
 								under-graduate degree in Web Design. Now, I'm familiar with multiple computer languages.
 							</p>
-							<a class="button is-primary" href="https://github.com/cameront4504">See Github</a>
+							<a class="button is-white" href="https://github.com/cameront4504">See Github</a>
 						</div>
 						<div class="column">
 							<img class="image skill-image round-this" src="assets/s_write.png" alt="drawing">
@@ -180,15 +203,17 @@
 							<p class="skill-para">
 								Both for class and enjoyment, I've written several choose-your-own adventure stories-- mostly in Twine and JavaScript-- over the years. 
 							</p>
-							<a class="button is-primary" href="writing_sample.html">See Sample</a>
+							<a class="button is-white" href="writing_sample.html">See Sample</a>
 						</div>
 					</div>
 				</div>
 				<br/>
 			</div>
+			</div>
 
 			<!-- SECTION: CONTACT-->
-			<div id="contact" class="section is-gray">
+			<div id="contact" class="fullsize is-gray">
+			<div class="section">
 			<div class="container">
                 <div class="level">
 				<div class="level-left">
@@ -203,6 +228,7 @@
                            <input class="input" type="text" placeholder="Name input">
                        </div>
                    </div>
+
                    <div class="field">
                        <label class="label">Email</label>
                        <div class="control has-icons-left has-icons-right">
@@ -229,15 +255,14 @@
                 </div>
 			</div>
 			</div>
-			
+			</div>
+
 			<!-- SECTION: FOOTER -->
 			<footer>
 				<div class="row">
 					<a href="#top">Scroll to Top</a>
 				</div>
 			</footer>
-
-			</div="wrapper">
 
 			<!-- GALLERY SCRIPT -->
 			<script>
@@ -255,11 +280,7 @@
 					["Alfred" , "alfred" , "A non-invasive personal assistant."],
 					["The Lion & The Mouse" , "lionmouse" , "Revisiting Aesop's Tales as a children's picture book."],
 					["The Unrequited House of Seven Pools" , "sevenpools" , "A deductive game in your browser."],
-					["H.W.A.T", "hwat" , "The Housewife Aptitude Test (Parody)"],
-					["","place" ,""],
-					["","place2" ,""],
-					["","place" ,""],
-					["","place2" ,""],
+					["H.W.A.T", "hwat" , "The Housewife Aptitude Test (Parody)"]
 				];
 
 				var i = 0;

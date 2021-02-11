@@ -10761,6 +10761,9 @@ label.panel-block:hover {
 
 .section {
   /*padding: 3rem 1.5rem;*/
+}
+
+.section .container {
   padding: 1.5rem 0;
 }
 
