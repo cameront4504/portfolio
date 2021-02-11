@@ -22,9 +22,9 @@ function handleBarMenu() {
 	}
 }
 
-// this makes brand change color each hover
+// Brand switches between red and orange colors for fun <|:^)
 function makeItPretty() {
-	var colors = ["#3a1772","#F08A96","#EBBB67"];
+	var colors = ["#eb7e01","#da4343"];
 	var brand = document.getElementById("site-brand");
 	var min = 0;
 	var max = 3;

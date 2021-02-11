@@ -56,8 +56,7 @@ gray: #454341;
 
 /* FONTS /*
 
-font-family: 'Fjalla One', sans-serif;
-font-family: 'Raleway', sans-serif;
+font-family: 'Lato', sans-serif;
 
 
 /*––––––––––––––––––––––––––––––––––––––––––––––––
@@ -65,6 +64,10 @@ font-family: 'Raleway', sans-serif;
  MAIN
 
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+html {
+	scroll-behavior: smooth;
+  }
 
 /* BODY */
 
@@ -90,9 +93,9 @@ body {
 /* FONTS */
 
 h1, h2 {
-	font-family: 'Fjalla One';
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
 }
-
 
 a {
 	text-decoration: none;
@@ -120,14 +123,18 @@ hr {
 /* primary nav */
 
 #site-brand {
-	font-family: 'Fjalla One';
-	font-size: 2em;
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	font-size: 1.5em;
+	letter-spacing: 3px;
 	margin-right: 10px;
+	padding: 0;
 }
 
-#primary-nav {
+nav {
 	text-transform: uppercase;
 	padding: 10px;
+	border-bottom: 1px solid rgb(226, 226, 226);
 }
 
 #primary-nav a {
@@ -135,7 +142,7 @@ hr {
 }
 
 #primary-nav a:hover {
-	color: #F08A96;
+	color: #da4343;
 }
 
 .social-set {
@@ -147,7 +154,7 @@ hr {
 }
 
 .social {
-	color: #F08A96;
+	color:#eb7e01;
 }
 
 .navbar a, .navbar a:hover {
@@ -160,6 +167,13 @@ hr {
 
 /* bar menu */
 
+#barmenu {
+	display: none;
+	text-align: center;
+	margin-top: 75px;
+	margin-bottom: 0;
+}
+
 #barmenu-click {
 	position: absolute;
 	top: 0;
@@ -168,21 +182,15 @@ hr {
 	padding: 24px 20px 0 0;
 }
 
-#barmenu {
-	display: none;
-	text-align: center;
-}
-
 #barmenu a:hover {
 	color: #454341;
 }
 
 /*––––––––––––––––––––––––––––––––––––––––––––––––
 
- PAGE CONTENT
+ MULTI PAGE CONTENT
 
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
 
 /* Works & Links */
 
@@ -233,6 +241,29 @@ hr {
 	background-color: white;
 }
 
+/* Buttons */
+
+.button {
+	border-radius: 20px;
+}
+
+.button.is-primary {
+	background-color: #eb7e01;
+}
+
+.button.is-primary:hover {
+	background-color:#da4343;
+}
+
+/*––––––––––––––––––––––––––––––––––––––––––––––––
+
+PAGE SPECIFIC (TEMPLATE)
+
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#banner {
+	margin-top: 70px;
+}
 
 /*––––––––––––––––––––––––––––––––––––––––––––––––
 
@@ -241,9 +272,18 @@ hr {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 footer {
-	margin-top: 6px;
+	background-color: #24223B;
 	text-align: center;
 	padding: 30px 0 30px 0;
+	margin-top: 20px;
+}
+
+footer a {
+	color: white;	
+}
+
+footer a:hover {
+	color:#eb7e01;
 }
 
 /*––––––––––––––––––––––––––––––––––––––––––––––––
@@ -260,30 +300,26 @@ footer {
 	text-align: center;
 }
 
-.round-image {
+.round-this {
 	border-radius: 50%;
 }
 
-@media only screen and (min-width: 1025px) {
-    #barmenu-click, #barmenu {
+.center-this {
+	text-align: center;
+}
+
+.add-padding {
+	padding: 1.5rem;
+}
+
+@media only screen and (min-width: 1024px) {
+    #barmenu-click, #barmenu, #barmenu .navbar-item{
 		display: none;
 	}
 }
 
-/* desktop */
-
-@media only screen and (max-width: 1200px) {
-
-}
-
-/* tablets */
-
-@media only screen and (max-width: 768px) {
-
-}
-
-/* phones */
-
-@media only screen and (max-width: 375px) {
-	
+@media only screen and (max-width: 1024px) {
+	.navbar-end {
+		display: none;
+	}
 }

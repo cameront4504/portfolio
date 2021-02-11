@@ -12,6 +12,10 @@
 		<!-- don't modify -->
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css/bulma.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+		</style>
 		<!-- modify -->
 		<link rel="stylesheet" type="text/css" href="css/main-styles.css">
 		
@@ -22,33 +26,37 @@
 	</head>
 	
 	<body>
+			<span id="top"></span>
+
 			<!-- DESKTOP MENU -->
-			<nav id="primary-nav" class="navbar" role="navigation" aria-label="main navigation">
+			<nav id="primary-nav" class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
 			  <div onmouseover="makeItPretty();" class="navbar-brand">
-				<a id="site-brand" class="navbar-item" href="index.html">Cameron Tolentino</a>
+				<a id="site-brand" class="navbar-item" href="#about">Cameron Tolentino</a>
 
 				<a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
 				  <a id="barmenu-click" onclick="handleBarMenu();"><i class='fas fa-bars'></i></a>
 				</a>
 			  </div>
 
-			  <div class="navbar-menu">
+			  <!-- navbar-menu to move left again-->
+			  <div class="navbar-end is-fixed-top">
 				<div class="navbar-start">
-					<a href="index.html" class="navbar-item active">
-						Home
+					<a href="#projects" class="navbar-item">
+						Projects
+					</a>
+					<a href="#skills" class="navbar-item">
+						Skills
+					</a>
+					<a href="#contact" class="navbar-item">
+						Contact
 					</a>
 					<a class="navbar-item">
-						Works
-					</a>
-					<a href="about.html" class="navbar-item">
-						About
-					</a>
-					<a class="navbar-item">
-						Surprise Me
+						Blog
 					</a>
 				</div>
 
-					<div class="navbar-end">
+				<!--
+					<div class="navbar-end is-fixed-top">
 					  <div class="navbar-item">
 						<div class="social-set social">
 						  <a href="https://www.linkedin.com/in/cameron-tolentino-21109a162/"><i class="fab fa-linkedin-in"></i></a>
@@ -58,19 +66,23 @@
 					  </div>
 					</div>
 				</div>
+				-->
 			</nav>
 			<hr>
 		
 			<!-- MOBILE MENU -->
 			<nav id="barmenu">
-			<a href="index.html" class="navbar-item">
-						Home
+					<a href="#projects" class="navbar-item">
+						Projects
+					</a>
+					<a href="#skills" class="navbar-item">
+						Skills
+					</a>
+					<a href="#contact" class="navbar-item">
+						Contact
 					</a>
 					<a class="navbar-item">
-						Works
-					</a>
-					<a href="about.html" class="navbar-item">
-						About
+						Blog
 					</a>
 					<a href="https://www.linkedin.com/in/cameron-tolentino-21109a162/" class="navbar-item social">
 						Linked In
@@ -81,201 +93,179 @@
 					<a class="navbar-item social">
 						Email
 					</a>
-			<hr>
 			</nav>
-				
-			<!-- FIRST ROW -->
-			<div class="columns is-gapless">
-				<!-- illus -->
-				<div class="column work-cover">
-					<div class="cover-container">
-						<a href="graphic_design.html">
-							<img src="assets/cover_graphic.png" alt="Illustration Art Link"/>
-							<div class="cover-overlay">
-								<div class="text">
-								<h3>Illustration</h3>
-								<p>A collection of illustrations including character concepts, digital paintings, and more.</p>
-								</div>
-							</div>
-						</a>
-					</div>
-				</div>
-				<!-- web -->
-				<div class="column work-cover">
-					<div class="cover-container">
-						<a href="webdesign.html">
-								<img src="assets/cover_html.png" alt="Web Art Link"/>
-								<div class="cover-overlay">
-									<div class="text">
-									<h3>Web Design</h3>
-									<p>Various stills of web design projects, most involving front end design or database manipulation and retrieval.</p>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
-				<!-- 3D -->
-				<div class="column work-cover">
-					<div class="cover-container">
-						<a href="graphic_design.html">
-							<img src="assets/cover_3D.png" alt="3D Art Link"/>
-							<div class="cover-overlay">
-								<div class="text">
-								<h3>3D Modeling</h3>
-								<p>Images and object-based scenes created and rendered in Maya.</p>
-								</div>
-							</div>
-						</a>
-					</div>
-				</div>
-				<!-- Physical Computing -->
-				<div class="column work-cover">
-					<div class="cover-container">
-						<a href="graphic_design.html">
-							<img src="assets/cover_place2.png" alt="Physical Computing Link"/>
-							<div class="cover-overlay">
-								<div class="text">
-								<h3>Expertise</h3>
-								<p>asf</p>
-								</div>
-							</div>
-						</a>
-					</div>
-				</div>
-			<!-- end row -->
+			
+			<!-- SECTION: BANNER-->
+			<div id="about" class="container-is-max">
+				<img id="banner" src="assets/banner.png"/>
 			</div>
 			
-			<!-- SECOND ROW -->
+			<!-- SECTION: ABOUT -->
+			<div class="section">
+			<div class="container">
+				<div class="level">
+				<div class="level-left">
+					<img src="assets/me.png" class="round-this image is-64x64" alt="Literally me">
+					<h1 class="title is-4">About</h1>
+				</div>
+				</div>
+				<p>
+					Cameron Tolentino is a former Web Design student graduated from the University of Central Florida. He is now pursuing a Master's Degree in Digital Media, and focuses on creating narrative-driven applications via web development and/or art.
+				</p>
+		​		</br>
+					​As for research, his main interests include narrative identity in digital culture, and the effects of hyperreality on reasoning and embodiment. When not freelancing, he enjoys writing, drawing, and assembling 3D models
+				</p>
+				<br/>
+				<a class="button is-primary" href="https://7cba371d-e4c0-4a66-97ac-aec7c6d6cd28.filesusr.com/ugd/ffcc69_b3f0105a541e4b2f9ac788a9378bae26.pdf">See Resume</a>
+				<a class="button">See CV (TBA)</a>
+			</div>
+			</div>
 
-			<div class="columns is-gapless">
-					<!-- Project: Gumballs -->
-					<div class="column work-cover">
-						<div class="cover-container">
-							<a href="graphic_design.html">
-								<img src="assets/cover_gumballs.png" alt="Gumball Comic Link"/>
-								<div class="cover-overlay">
-									<div class="text">
-									<h3>A Comic About Gumballs</h3>
-									<p>A personal comic that uses gumball machines as a metaphor for time and growing up.</p>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
-					<!-- Project: Ghost -->
-					<div class="column work-cover">
-						<div class="cover-container">
-							<a href="project-ghost.html">
-								<img src="assets/cover_ghost.png" alt="Twine Game Link"/>
-								<div class="cover-overlay">
-									<div class="text">
-									<h3>Ghost</h3>
-									<p>An interactive story created using Twine. It combines html, scripting, and minor variable manipulation to tell a short sci-fi tale.</p>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
-					<!-- Project: Travels -->
-					<div class="column work-cover">
-						<div class="cover-container">
-							<a href="project-travels.html">
-								<img src="assets/cover_travels.png" alt="Twine Game Link"/>
-								<div class="cover-overlay">
-									<div class="text">
-									<h3>Travels</h3>
-									<p>An interactive story created using Twine. While it initially starts as a joke to lure players in, it later uses variables and player history to craft a more serious tale.</p>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
-					<!-- Project: Lion -->
-					<div class="column work-cover">
-						<div class="cover-container">
-							<a href="project-lionandmouse.html">
-								<img src="assets/cover_lion.png" alt="Children's Book Link"/>
-								<div class="cover-overlay">
-									<div class="text">
-									<h3>The Lion &amp; The Mouse</h3>
-									<p>A visual overhaul of Aesop's fable: The Lion &amp; The Mouse.</p>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
-			<!-- end row -->
+			<div id="projects" class="section">
+				<div class="container-is-max">
+					<div id="gallery"></div>
+				</div>
+			</div>
+
+
+			<!-- SECTION: CONTACT-->
+			<div id="contact" class="section">
+			<div class="container">
+               <h1 class="title is-4">Contact</h1>
+                    <div class="field">
+                       <label class="label">Name</label>
+                       <div class="control">
+                           <input class="input" type="text" placeholder="Text input">
+                       </div>
+                   </div>
+
+                   <div class="field">
+                       <label class="label">Email</label>
+                       <div class="control has-icons-left has-icons-right">
+                           <input class="input" type="email" placeholder="Email input" value="">
+                           <span class="icon is-small is-left">
+                           <i class="fas fa-envelope"></i>
+                           </span>
+                       </div>
+                   </div>
+                    <div class="field">
+                       <label class="label">Message</label>
+                       <div class="control">
+                           <textarea class="textarea" placeholder="Textarea"></textarea>
+                   </div>
+                   <br/>
+                   <div class="field is-grouped is-grouped-right">
+                   <div class="control">
+                       <button class="button is-primary">Submit</button>
+                   </div>
+                   <div class="control">
+                       <button class="button">Cancel</button>
+                   </div>
+                   </div>
+                </div>
+			</div>
 			</div>
 			
-			<!-- THIRD ROW -->
-			<div class="columns is-gapless">
-				<!-- Project: Seven Pools -->
-					<div class="column work-cover">
-						<div class="cover-container">
-							<a href="project-kurios.html">
-								<img src="assets/cover_sevenpools.png" alt="Seven Pools Art Link"/>
-								<div class="cover-overlay">
-									<div class="text">
-									<h3>The Unrequited House<br/> of Seven Pools</h3>
-									<p>A short web-based game. Be a detective from the 4th Dimension and solve a<s>n unsolvable</s> crime.</p>
-									</div>
-								</div>
-							</a>
-						</div>
-				</div>
-				<!-- Project: Kurios -->
-					<div class="column work-cover">
-						<div class="cover-container">
-							<a href="project-kurio.html">
-								<img src="assets/cover_kurios.png" alt="3D Art Link"/>
-								<div class="cover-overlay">
-									<div class="text">
-									<h3>Kurios</h3>
-									<p>A web-based application created as part of a team at the University of Central Florida.</p>
-									</div>
-								</div>
-							</a>
-						</div>
-				</div>
-				<!-- AR Adventure -->
-				<div class="column work-cover">
-					<div class="cover-container">
-						<a href="project-aradventure.html">
-							<img src="assets/cover_aradventure.png" alt="3D Art Link"/>
-							<div class="cover-overlay">
-								<div class="text">
-								<h3>AR Adventure</h3>
-								<p>An installation created in Max8 that combines education with entertainment. A project to be used in K-12 classrooms.</p>
-								</div>
-							</div>
-						</a>
-					</div>
-				</div>
-				<!-- placeholder -->
-				<div class="column work-cover placeholder"></div>
-			<!-- end row -->
-			</div>
-			
-			<hr>
-			
-			<!-- FOOTER -->
+			<!-- SECTION: FOOTER -->
 			<footer>
 				<div class="row">
-				<a href="#">Scroll to Top</a>
+					<a href="#top">Scroll to Top</a>
 				</div>
 			</footer>
+
+			<!-- GALLERY SCRIPT -->
+			<script>
+			
+			// Fill out gallery on projects / Home Page
+			// This makes it so I only have to change info here versus constantly updating the html
+
+			function makeGallery() {
+				// format is title, image source, description
+				var projects = [
+					["Kurios", "kurios", "A Web App for Saving and Sharing Audio Memories with Physical Objects"],
+					["Gumballs", "gumballs", "A nostalgic comic about gumball machines."],
+					["Ghost", "ghost", "An interactive story created using Twine."],
+					["Travels", "travels", "An interactive story created using Twine."],
+					["The Lion & The Mouse" , "lionmouse" , "Revisiting Aesop's Tales as a children's picture book."],
+					["The Unrequited House of Seven Pools" , "sevenpools" , "A deductive game in your browser."],
+					["Alfred" , "alfred" , "A non-invasive personal assistant."],
+					["H.W.A.T", "hwat" , "The Housewife Aptitude Test (Parody)"]
+				];
+
+				var i = 0;
+				var columns = 4;
+				var length = projects.length;
+				var content = ""
+
+				// Adding some extra breakpoints beyond bulma's auto
+				if (screen.width >= 1200) {
+					columns = 4;
+				} else if (screen.width <= 1000) {
+					columns = 3;
+				} else if (screen.width <= 360) {
+					columns = 1;
+				} else {
+					columns = 4;
+				}
+
+				// Add strings to content to later append
+				while (i < length) {
+					
+					// If four slots are filled, make sure to add class to force new row
+					// Have to call for end first, due to structure
+					
+					if (i % columns == 0) {
+						content += "</div>";
+					}	
+
+					if (i % columns == 0) {
+						content += "<div class='columns is-gapless'>";
+					}
+
+					// Generate slots in gallery
+					content +=`
+						<div class='column work-cover'>
+							<div class='cover-container'>
+								<a href='projects/`+projects[i][0]+`.html'>
+									<img src='assets/`+projects[i][1]+`.png' alt='`+projects[i][0]+`'/>
+									<div class='cover-overlay'>
+										<div class='text'>
+										<h3>`+projects[i][0]+`</h3>
+										<p>`+projects[i][2]+`</p>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					`;
+				
+					i++;
+				};
+
+				// Convert strings to html and append basically
+				document.getElementById("gallery").innerHTML = content;
+			}
+
+			makeGallery();
+		</script>
 	</body>
 </html>
 
 <!--
 
-Thanks for stopping by!
-- Cam
+	Thanks for stopping by!
+			- Cam
 
-    ,    /-.
-   ((___/ __>
-   /      }
-   \ .--.(    ___
-    \\   \\  /___\
+
+		 ▄▀▄▀▀▀▀▄▀▄░░░░░░░░░
+		░█░░░░░░░░▀▄░░░░░░▄░
+		█░░▀░░▀░░░░░▀▄▄░░█░█
+		█░▄░█▀░▄░░░░░░░▀▀░░█
+		█░░▀▀▀▀░░░░░░░░░░░░█
+		█░░░░░░░░░░░░░░░░░░█
+		█░░░░░░░░░░░░░░░░░░█
+		░█░░▄▄░░▄▄▄▄░░▄▄░░█░
+		░█░▄▀█░▄▀░░█░▄▀█░▄▀░
+		░░▀░░░▀░░░░░▀░░░▀░░░
 	
 -->
