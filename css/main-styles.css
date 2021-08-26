@@ -82,6 +82,11 @@ body {
 	height: 100vh;
 }
 
+.project-page {
+	height: 90%;
+	width: 100%;
+}
+
 /* OVERRIDES */
 
 .columns:not(:last-child) {
@@ -185,8 +190,26 @@ nav {
 #barmenu a:hover {
 	background-color:#eb7e01;
 	color: white;
-	font-weight: bold;
 }
+
+#scroll-button {
+	height: 50px;
+	width: 50px;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	margin: 50px;
+	z-index: 1;
+}
+
+/*
+#scroll-button a {
+	background-color: #eb7e01;
+	color: white;
+	padding: 5px;
+	border-radius: 5px;
+}
+*/
 
 /*––––––––––––––––––––––––––––––––––––––––––––––––
 
@@ -209,11 +232,25 @@ CROSS PAGE STYLING
 	background-color:#da4343;
 }
 
+.button.is-secondary{
+	border: 0px;
+	background-color: #24223B;
+	color: white;
+}
+
+.button.is-secondary:hover {
+	background-color:#413D6A;
+}
+
 /*––––––––––––––––––––––––––––––––––––––––––––––––
 
  INDEX PAGE
 
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#banner {
+	margin-top: 50px;
+}
 
 /* Works & Links */
 
@@ -264,12 +301,6 @@ CROSS PAGE STYLING
 	background-color: white;
 }
 
-#about2 {
-	height: 400px;
-	display: flex;
-	align-items: center;
-}
-
 #skills {
 	min-height: 730px;
 	margin-top: -7px;
@@ -279,7 +310,7 @@ CROSS PAGE STYLING
 	height: 250px;
 	width: 250px;
 	margin: 0 auto;
-	margin-bottom: 1rem;
+	margin-bottom: 2rem;
 	margin-top: 3rem;
 }
 
@@ -287,7 +318,6 @@ CROSS PAGE STYLING
 	height: 80px;
 	width: 90%;
 	margin: 0 auto;
-	margin-bottom: 3rem;
 }
 
 
@@ -362,6 +392,10 @@ footer a:hover {
 	text-align: center;
 }
 
+.border-this {
+	border: 1px solid #dbdbdb;
+}
+
 .add-padding {
 	padding: 1.5rem;
 }
@@ -385,6 +419,7 @@ footer a:hover {
 
 @media only screen and (max-width: 640px) {
 
+	/*
 	.button {
 		border-radius: 5px;
 		width: 100%;
@@ -394,6 +429,7 @@ footer a:hover {
 	#skills .button {
 		width: 90%;
 	}
+	*/
 
 	#site-brand {
 		font-size: 1.2rem;

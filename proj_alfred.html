@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Alfred &vert; Cameron Tolentino</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="Portfolio and Profile Website">
+		<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+		<meta name="author" content="Cameron Tolentino">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  
+		<!-- stylesheets -->
+		<!-- don't modify -->
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/bulma.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+		</style>
+		<!-- modify -->
+		<link rel="stylesheet" type="text/css" href="css/main-styles.css">
+		
+	  
+		<!-- scripts -->
+		<script src="https://kit.fontawesome.com/44a2079b7c.js" crossorigin="anonymous"></script>
+		<script src="scripts/main-script.js"></script> 
+	</head>
+
+    <body>
+
+    <span id="top"></span>
+
+			<!-- DESKTOP MENU -->
+			<nav id="primary-nav" class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+			  <div onmouseover="makeItPretty();" class="navbar-brand">
+				<a id="site-brand" class="navbar-item" href="index.html">Cameron Tolentino</a>
+
+				<a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+				  <a id="barmenu-click" onclick="handleBarMenu();"><i class='fas fa-bars'></i></a>
+				</a>
+			  </div>
+
+			  <!-- navbar-menu to move left again-->
+			  <div class="navbar-end is-fixed-top">
+				<div class="navbar-start">
+					<a href="index.html#projects" class="navbar-item">
+						Projects
+					</a>
+					<a href="index.html#skills" class="navbar-item">
+						Skills
+					</a>
+					<a href="index.html#contact" class="navbar-item">
+						Contact
+					</a>
+					<a class="navbar-item">
+						Blog
+					</a>
+				</div>
+
+				<!--
+					<div class="navbar-end is-fixed-top">
+					  <div class="navbar-item">
+						<div class="social-set social">
+						  <a href="#/"><i class="fab fa-linkedin-in"></i></a>
+						  <a href="#"><i class="fab fa-instagram"></i></a>
+						  <a href="#"><i class="far fa-envelope"></i></a>
+						</div>
+					  </div>
+					</div>
+				</div>
+				-->
+			</nav>
+			<hr>
+
+			<!-- MOBILE MENU -->
+			<nav id="barmenu" class="navbar is-fixed-top">
+					<a href="#projects" class="navbar-item">
+						Projects
+					</a>
+					<a href="#skills" class="navbar-item">
+						Skills
+					</a>
+					<a href="#contact" class="navbar-item">
+						Contact
+					</a>
+					<a class="navbar-item">
+						Blog
+					</a>
+			</nav>
+
+	<br/><br/><br/>
+    <div class="section project-page">
+    <div class="container">
+        <div class="columns">
+			<!-- IMAGES -->
+            <div class="column is-three-fifths">
+				<!-- main image -->
+				<img src="assets/projects/alfred1.png" alt="decorative image"/>
+				<br/>
+            </div>
+			<!-- PROJECT INFO -->
+            <div class="column">
+                <h2 class="title is-5">Alfred</h2>
+                <i><h3 class="title is-6">A Non-invasive Personal Assistant</h3></i>
+				<br/>
+                <p>
+					A personal assistant application creation via python. The application assists with a particular set of tasks, such as recording in a virtual bullet journal. As of today, the assistant, with Alfred as its default yet customizable name, can assist with several tasks including but not limited to:<br/><br/>
+                </p>
+                <ul>
+                    <li>Habit Tracking</li>
+                    <li>Chore Tracking</li>
+                    <li>Quick Research</li>
+                </ul>
+				<br/>
+                <p>
+					A future update may include a graphical interface for desktop and add future functionality.
+				</p>
+				<br/>
+                <a class="button is-secondary" href="https://github.com/cameront4504/alfred_pennyworth">View on Github</a>
+				
+            </div>
+        </div>
+    </div>
+    </div>
+	<!-- SECTION: FOOTER -->
+		<footer>
+			<div class="row">
+				<a href="#top">Scroll to Top</a>
+			</div>
+		</footer>
+    </body>
+
+</html>

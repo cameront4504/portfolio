@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Chance Operations &vert; Cameron Tolentino</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="Portfolio and Profile Website">
+		<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+		<meta name="author" content="Cameron Tolentino">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  
+		<!-- stylesheets -->
+		<!-- don't modify -->
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/bulma.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+		</style>
+		<!-- modify -->
+		<link rel="stylesheet" type="text/css" href="css/main-styles.css">
+		
+	  
+		<!-- scripts -->
+		<script src="https://kit.fontawesome.com/44a2079b7c.js" crossorigin="anonymous"></script>
+		<script src="scripts/main-script.js"></script> 
+	</head>
+
+    <body>
+
+    <span id="top"></span>
+
+			<!-- DESKTOP MENU -->
+			<nav id="primary-nav" class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+			  <div onmouseover="makeItPretty();" class="navbar-brand">
+				<a id="site-brand" class="navbar-item" href="index.html">Cameron Tolentino</a>
+
+				<a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+				  <a id="barmenu-click" onclick="handleBarMenu();"><i class='fas fa-bars'></i></a>
+				</a>
+			  </div>
+
+			  <!-- navbar-menu to move left again-->
+			  <div class="navbar-end is-fixed-top">
+				<div class="navbar-start">
+					<a href="index.html#projects" class="navbar-item">
+						Projects
+					</a>
+					<a href="index.html#skills" class="navbar-item">
+						Skills
+					</a>
+					<a href="index.html#contact" class="navbar-item">
+						Contact
+					</a>
+					<a class="navbar-item">
+						Blog
+					</a>
+				</div>
+
+				<!--
+					<div class="navbar-end is-fixed-top">
+					  <div class="navbar-item">
+						<div class="social-set social">
+						  <a href="#/"><i class="fab fa-linkedin-in"></i></a>
+						  <a href="#"><i class="fab fa-instagram"></i></a>
+						  <a href="#"><i class="far fa-envelope"></i></a>
+						</div>
+					  </div>
+					</div>
+				</div>
+				-->
+			</nav>
+			<hr>
+
+			<!-- MOBILE MENU -->
+			<nav id="barmenu" class="navbar is-fixed-top">
+					<a href="#projects" class="navbar-item">
+						Projects
+					</a>
+					<a href="#skills" class="navbar-item">
+						Skills
+					</a>
+					<a href="#contact" class="navbar-item">
+						Contact
+					</a>
+					<a class="navbar-item">
+						Blog
+					</a>
+			</nav>
+
+	<br/><br/><br/>
+    <div class="section project-page">
+    <div class="container">
+        <div class="columns">
+			<!-- IMAGES -->
+            <div class="column is-three-fifths">
+				<!-- main image -->
+				<img class="border-this" src="assets/projects/hwat1.png" alt="decorative image"/>
+                <br/>
+				<img class="border-this" src="assets/projects/hwat2.png" alt="decorative image"/>
+            </div>
+			<!-- PROJECT INFO -->
+            <div class="column">
+                <h2 class="title is-5">H.W.A.T.</h2>
+                <i><h3 class="title is-6">The Housewife Aptitude Test
+                    <br/>(A parody based on Fallout's G.O.A.T quiz)</h3></i>
+				<br/>
+                <ul>
+                    <li>Can you cook?</li>
+                    <li>Can you clean?</li>
+                    <li>Can yuou do <i>both?</i> (Faux gasp)</li>
+                </ul>
+                <br/>
+                <p>
+					H.W.A.T puts your mind and temperament to the test to determine your true housewife aptitude-- both inherent and acquired. You only have one shot per answer, so remember to always answer as honestly and earnestly as possible!
+				</p>
+				<br/>
+                <a class="button" href="https://cameront4504.github.io/hwat_chanceoperations">Take the Quiz</a>
+                <a class="button is-secondary" href="https://github.com/cameront4504/hwat_chanceoperations">View On Github</a>
+				
+            </div>
+        </div>
+    </div>
+    </div>
+	<!-- SECTION: FOOTER -->
+		<footer>
+			<div class="row">
+				<a href="#top">Scroll to Top</a>
+			</div>
+		</footer>
+    </body>
+
+</html>

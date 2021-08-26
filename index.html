@@ -125,12 +125,14 @@
 				<p>
 					Cameron Tolentino is a former Web Design student graduated from the University of Central Florida. He is now pursuing a Master's Degree in Digital Media and works to create story-driven applications via art and/or web development.
 				</p>
-		​		</br>
+		​		 <br/>
+				<p>
 					​As for research, his main interests include narrative identity in digital culture, and the effects of hyperreality on reasoning and embodiment. When not freelancing, he enjoys writing, drawing, and assembling 3D models.
 				</p>
 				<br/>
 				<a class="button is-primary" href="https://7cba371d-e4c0-4a66-97ac-aec7c6d6cd28.filesusr.com/ugd/ffcc69_b3f0105a541e4b2f9ac788a9378bae26.pdf">See Resume</a>
 				<a class="button">See CV (TBA)</a>
+				<br/><br/>
 			</div>
 			</div>
 
@@ -160,7 +162,7 @@
 							<img class="image skill-image round-this grayscale" src="assets/s_draw.png" alt="drawing">
 							<h2 class="subtitle">Illustration</h2>
 							<p class="skill-para">
-								One of my main passions, I love to bring some kind of visual design to my projects, especially through character art.
+								Graphic design and content creation via Adobe Suite and Clip Studio Pro
 							</p>
 							<a class="button is-primary" href="gallery.html">See Gallery</a>
 						</div>
@@ -168,8 +170,7 @@
 							<img class="image skill-image round-this grayscale" src="assets/s_code.png" alt="drawing">
 							<h2 class="subtitle">Programming</h2>
 							<p class="skill-para">
-								I was first introduced to programming through my
-								under-graduate degree in Web Design. Now, I'm familiar with multiple computer languages.
+								Applications created using Python, Javascript, PHP, and more
 							</p>
 							<a class="button is-primary" href="https://github.com/cameront4504">See Github</a>
 						</div>
@@ -177,7 +178,7 @@
 							<img class="image skill-image round-this grayscale" src="assets/s_write.png" alt="drawing">
 							<h2 class="subtitle">Writing</h2>
 							<p class="skill-para">
-								Both for class and enjoyment, I've written several choose-your-own adventure stories-- mostly in Twine and JavaScript-- over the years. 
+								A mixture of interactive stories and professional writing examples
 							</p>
 							<a class="button is-primary" href="writing_sample.html">See Sample</a>
 						</div>
@@ -240,23 +241,20 @@
 			<script>
 			
 			// Fill out gallery on projects / Home Page
-			// This makes it so I only have to change info here versus constantly updating the html
 
 			function makeGallery() {
 				// format is title, image source, description
 				var projects = [
+					["Pygmalion", "pyg", "An interactive story created using Twine."],
 					["Kurios", "kurios", "A Web App for Saving and Sharing Audio Memories with Physical Objects"],
 					["Gumballs", "gumballs", "A nostalgic comic about gumball machines."],
-					["Ghost", "ghost", "An interactive story created using Twine."],
+					//["Ghost", "ghost", "An interactive story created using Twine."],
 					["Travels", "travels", "An interactive story created using Twine."],
 					["Alfred" , "alfred" , "A non-invasive personal assistant."],
 					["The Lion & The Mouse" , "lionmouse" , "Revisiting Aesop's Tales as a children's picture book."],
 					["The Unrequited House of Seven Pools" , "sevenpools" , "A deductive game in your browser."],
-					["H.W.A.T", "hwat" , "The Housewife Aptitude Test (Parody)"],
-					["placeholder","place" ,""],
-					["placeholder","place2" ,""],
-					["placeholder","place" ,""],
-					["placeholder","place2" ,""],
+					["H.W.A.T", "hwat" , "The Housewife Aptitude Test (Parody)"]
+					//["placeholder","place" ,""]
 				];
 
 				var i = 0;
@@ -293,7 +291,7 @@
 					content +=`
 						<div class='column work-cover'>
 							<div class='cover-container'>
-								<a href='projects/`+projects[i][0]+`.html'>
+								<a href='proj_`+projects[i][1]+`.html'>
 									<img class="grayscale" src='assets/`+projects[i][1]+`.png' alt='`+projects[i][0]+`'/>
 									<div class='cover-overlay'>
 										<div class='text'>
